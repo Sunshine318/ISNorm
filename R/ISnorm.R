@@ -8,7 +8,7 @@
 #' @param Batch
 #'
 #' @return matrix
-#' @export
+#' @export (qdap::mgsub)
 #'
 #' @examples
 ISnorm<-function(batch_file,className,Control_samples,sample_names,Batch){
@@ -38,7 +38,7 @@ ISnorm<-function(batch_file,className,Control_samples,sample_names,Batch){
   cl1<-paste0(cl,".")
   cl2<-rep("",length(cl1))
   library(qdap)
-  colnames(classdf) <- mgsub(cl1,cl2,colnames(classdf),fixed=TRUE)
+  colnames(classdf) <- qdap::mgsub(cl1,cl2,colnames(classdf),fixed=TRUE)
   return(classdf)
 }
 

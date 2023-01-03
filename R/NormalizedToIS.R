@@ -1,3 +1,14 @@
+#' @Title Function for normalizing all data with given IS
+#'
+#' @param class :  IS name
+#' @param data : dataframe of all data
+#' @param listIS_vector :list for IS to be used with each lipid
+#' @param ALLIS
+#'
+#' @return: IS normalized data
+#' @export
+#'
+#' @examples
 NormalizedToIS<-function(class,data,listIS_vector,ALLIS){
   if(sum(listIS_vector==class)>=1)
   {

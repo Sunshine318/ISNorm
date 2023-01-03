@@ -1,4 +1,15 @@
 ###########function tol calculate RSD within and between batch
+#' Title
+#'
+#' @param data
+#' @param batch
+#' @param summary.range
+#' @param use
+#'
+#' @return a list
+#' @export (plyr::ddply,plyr::colwise,stats::sd,plyr::.,data.table::na.omit)
+#'
+#' @examples
 calc.mRSD<-function(data,batch=data.frame(1:nrow(data)),summary.range=seq(0,100,10),use="mean"){
   library(plyr)
   #bin summaries into range
@@ -6,8 +17,8 @@ calc.mRSD<-function(data,batch=data.frame(1:nrow(data)),summary.range=seq(0,100,
   #main object
   tmp<-data.frame(batch=batch,data)
   # summary
-  b.m<-ddply(tmp,.(batch),colwise(mean))
-  b.s<-ddply(tmp,.(batch),colwise(sd))
+  b.m<-plyr::ddply(tmp,.(batch),colwise(mean))
+  b.s<-plyr::ddply(tmp,.(batch),colwise(sd))
   b.rsd<-abs(b.s/b.m*100)
   b.rsd[,1]<-b.m[,1]
   #generate summary objects for analytes between all batches
