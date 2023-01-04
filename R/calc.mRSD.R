@@ -7,7 +7,8 @@
 #' @param use
 #'
 #' @return a list
-#' @export (plyr::ddply,plyr::colwise,stats::sd,plyr::.,data.table::na.omit)
+#' @export
+#' @importFrom plyr ddply
 #'
 #' @examples
 calc.mRSD<-function(data,batch=data.frame(1:nrow(data)),summary.range=seq(0,100,10),use="mean"){

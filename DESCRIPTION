@@ -1,12 +1,11 @@
 Package: ISNorm
 Type: Package
-Title: What the Package Does (Title Case)
+Title: IS normalization by selecting best IS for each lipid/metabolite
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Tanu Soni
+Maintainer: The package maintainer <tanusoni@umich.edu>
+Description: Selection of best IS for each compound by using pools and comparing RSD's post normalization.For each compound the best selected IS is then used to normalize data.
+License: MIT License
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/Sunshine318/ISNorm
