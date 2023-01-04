@@ -10,6 +10,7 @@
 #' @export
 #' @importFrom plyr ddply
 #' @importFrom plyr colwise
+#' @importFrom plyr .
 #' @importFrom base mean
 #' @importFrom stats sd
 #'
