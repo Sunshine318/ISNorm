@@ -10,6 +10,10 @@
 #' @export
 #' @importFrom plyr ddply
 #' @importFrom plyr colwise
+#' @importFrom base mean
+#' @importFrom stats sd
+#'
+#'
 #' @examples
 calc.mRSD<-function(data,batch=data.frame(1:nrow(data)),summary.range=seq(0,100,10),use="mean"){
   library(plyr)
