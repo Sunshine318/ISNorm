@@ -1,21 +1,20 @@
 ###########function tol calculate RSD within and between batch
 #' Title
 #'
-#' @param data
-#' @param batch
+#' @param data Dataframe
+#' @param batch Dataframe indicating batch
 #' @param summary.range
 #' @param use
 #'
 #' @return a list
-#' @export
-#' @importFrom plyr ddply
-#' @importFrom plyr colwise
-#' @importFrom plyr .
+#' @export calc.mRSD
+#' @importFrom plyr ddply colwise .
 #' @importFrom base mean
 #' @importFrom stats sd
 #'
 #'
 #' @examples
+#'
 calc.mRSD<-function(data,batch=data.frame(1:nrow(data)),summary.range=seq(0,100,10),use="mean"){
   library(plyr)
   #bin summaries into range
