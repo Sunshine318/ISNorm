@@ -7,7 +7,7 @@
 #'
 #' @return
 #' @export
-#' @importFrom plyr ddply colwise
+#' @importFrom plyr ddply
 #'
 #' @examples
 split.bins<-function(obj,bins=seq(10,100,10)){

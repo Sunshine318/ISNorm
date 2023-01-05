@@ -1,14 +1,14 @@
 
 #' Title : function to perform IS normalization on a data frame. It should contain IS in dataframe itself . The IS names start with word "IS"
 #'
-#' @param batch_file
-#' @param className
-#' @param Control_samples
-#' @param sample_names
-#' @param Batch
+#' @param batch_file Dataframe with compounds in rows and samples in columns
+#' @param className list of IS names
+#' @param Control_samples String indicating controls
+#' @param sample_names List coming from datainfo dataframe which has all sample names
+#' @param Batch factor indicating batch number for each sample
 #'
 #' @return matrix
-#' @export (qdap::mgsub)
+#' @export
 #'
 #' @examples
 ISnorm<-function(batch_file,className,Control_samples,sample_names,Batch){
