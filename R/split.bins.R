@@ -1,13 +1,13 @@
 ######split bins function used in calc.mRSD####
 #split object on bins
-#' Title
+#' Title: split object on bins
 #'
 #' @param obj
 #' @param bins
 #'
 #' @return
 #' @export
-#' @importFrom plyr ddply
+#' @importFrom plyr ddply colwise .
 #'
 #' @examples
 split.bins<-function(obj,bins=seq(10,100,10)){

@@ -7,7 +7,7 @@
 #' @param use
 #'
 #' @return a list
-#' @export calc.mRSD
+#' @export
 #' @importFrom plyr ddply colwise .
 #' @importFrom base mean
 #' @importFrom stats sd

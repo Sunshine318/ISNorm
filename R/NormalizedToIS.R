@@ -1,4 +1,4 @@
-#' @Title Function for normalizing all data with given IS
+#' Function for normalizing all data with given IS
 #'
 #' @param class :  IS name
 #' @param data : dataframe of all data
