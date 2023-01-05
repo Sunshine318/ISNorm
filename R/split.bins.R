@@ -1,5 +1,15 @@
 ######split bins function used in calc.mRSD####
 #split object on bins
+#' Title
+#'
+#' @param obj
+#' @param bins
+#'
+#' @return
+#' @export
+#' @importFrom plyr ddply colwise
+#'
+#' @examples
 split.bins<-function(obj,bins=seq(10,100,10)){
   library(plyr)
   interval<-cut(obj,bins,include.lowest = TRUE)
