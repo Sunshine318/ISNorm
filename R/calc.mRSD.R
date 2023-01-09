@@ -9,8 +9,7 @@
 #' @return a list
 #' @export
 #' @importFrom plyr ddply colwise .
-#' @importFrom base mean
-#' @importFrom stats sd
+#' @importFrom stats sd na.omit
 #'
 #'
 #' @examples

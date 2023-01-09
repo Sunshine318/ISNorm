@@ -2,10 +2,10 @@
 #split object on bins
 #' Title: split object on bins
 #'
-#' @param obj
-#' @param bins
+#' @param obj :a vector
+#' @param bins :a sequence
 #'
-#' @return
+#' @return list of listings
 #' @export
 #' @importFrom plyr ddply colwise .
 #'

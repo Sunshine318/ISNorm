@@ -7,7 +7,12 @@
 \method{split}{bins}(obj, bins = seq(10, 100, 10))
 }
 \arguments{
-\item{bins}{}
+\item{obj}{:a vector}
+
+\item{bins}{:a sequence}
+}
+\value{
+list of listings
 }
 \description{
 Title: split object on bins
