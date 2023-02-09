@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Tanu Soni
 Maintainer: The package maintainer <tanusoni@umich.edu>
 Description: Selection of best IS for each compound by using pools and comparing RSD's post normalization.For each compound the best selected IS is then used to normalize data.
-License:'use_mit_license()'
+License:use_mit_license()
 Encoding: UTF-8
 LazyData: true
 URL: https://github.com/Sunshine318/ISNorm
