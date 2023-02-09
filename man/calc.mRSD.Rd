@@ -16,6 +16,8 @@ calc.mRSD(
 
 \item{batch}{Dataframe indicating batch}
 
+\item{summary.range}{sequence}
+
 \item{use}{}
 }
 \value{

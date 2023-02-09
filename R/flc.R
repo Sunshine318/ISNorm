@@ -1,4 +1,4 @@
-###used in split.bins function unlist######
+###used in cut.bins function unlist######
 #' Title
 #'
 #' @param obj :a list
@@ -7,4 +7,4 @@
 #' @export
 #'
 #' @examples
-fixlc<-function(obj){as.character(unlist(obj))}
+flc<-function(obj){as.character(unlist(obj))}
