@@ -3,7 +3,7 @@
 #' @param class :  IS name
 #' @param data : dataframe of all data
 #' @param listIS_vector :list for IS to be used with each lipid
-#' @param ALLIS
+#' @param ALLIS :dataframe containing all IS only
 #'
 #' @return: IS normalized data
 #' @export
